@@ -6,15 +6,15 @@ import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
-        <MDBFooter bgColor='primary' className='text-white text-center text-lg-left'>
+        <MDBFooter bgColor='success bg-opacity-75' className='text-white text-center text-lg-left'>
       <MDBContainer className='p-4'>
         <MDBRow>
           <MDBCol lg='6' md='12' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Aged HealthCare</h5>
+            <h5 className='text-uppercase text-start'>TRAVELLERS PARADISE</h5>
 
-            <p>
-            The Health Resources and Services Administration (HRSA) and the Centers for Medicare and Medicaid Services (CMS) must strategically plan for and support the creation of a robust, qualified workforce across settings through a coordinated interdisciplinary approach that includes scholarships, loan forgiveness, and clinical internships, as well as efforts to train professionals and direct care workers who are already in the workforce.
-            </p>
+            <p className="text-start"> level-6, 46, Khilkhet, Dhaka</p>
+            <p className="text-start"> Official: travellers@haven.com</p>
+            <p className="text-start"> Helpline : 018822119999 (Available : 09:00am to 7:00pm)</p>
           </MDBCol>
 
           <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
@@ -22,16 +22,16 @@ const Footer = () => {
 
             <ul className='list-unstyled'>
               <li>
-              <Nav.Link as={HashLink} to ="/home#services" className="text-light">Aged Care and Services</Nav.Link>
+              <Nav.Link as={HashLink} to ="/home#services" className="text-light">TRAVELLERS PARADISE</Nav.Link>
               </li>
               <li>
-              <Nav.Link as={Link} to="/whyus" className="text-light">Why Us</Nav.Link>
+              <Nav.Link as={Link} to="" className="text-light">Why Us</Nav.Link>
               </li>
               <li>
-              <Nav.Link as={Link} to="/news" className="text-light">News</Nav.Link>
+              <Nav.Link as={Link} to="" className="text-light">News</Nav.Link>
               </li>
               <li>
-              <Nav.Link as={Link} to="/aboutus" className="text-light">About Us</Nav.Link>
+              <Nav.Link as={Link} to="" className="text-light">About Us</Nav.Link>
               </li>
             </ul>
           </MDBCol>
@@ -40,7 +40,7 @@ const Footer = () => {
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         &copy; {new Date().getFullYear()} Copyright:{' '}
-        <Navbar.Brand as={Link} to="/home" className="text-light">Aged HealthCare</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/home" className="text-light">TRAVELLERS PARADISE</Navbar.Brand>
       </div>
     </MDBFooter>
     );

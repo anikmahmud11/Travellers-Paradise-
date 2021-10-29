@@ -9,7 +9,7 @@ import carousel9  from '../../../images/Carousel/karosel9.jpg';
 const Banner = () => {
     return (
         <>
-            <Carousel className="container mt-2" >
+            <Carousel className="container-fluid mt-2  "id="carousel" >
   
  
   <Carousel.Item>

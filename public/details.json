@@ -1,0 +1,69 @@
+{
+    "details": [
+        
+            {
+                "id": 1,
+                "image": "https://i.ibb.co/1GfzGZN/1.jpg",
+                "name": "Bandorban-Keokradong",
+                "description": "Mount Keokradong (1230 Merers) is located in the Ruma thana of Bandarban district. It is roughly a day of walk from Boga lake.Keokradong is a peak located in Bandarban, Bangladesh, with an elevation of 986 metres",
+                "rating": 5,
+                "duration": "3 Days 3 Nights",
+                "price": 10000
+            },
+            {
+                "id": 2,
+                "image": "https://i.ibb.co/ymCnG0G/2.jpg",
+                "name": "Tanguar Haor",
+                "description": "Tanguar Haor is a river basin which is located at the Tahirpur Upazila of Sunamgonj district in Sylhet Division.Tanguar haor located in the Dharmapasha and Tahirpur upazilas of Sunamganj District in Bangladesh",
+                "rating": 4,
+                "duration": "2 Days 2 Nights",
+                "price": 7000
+            },
+            {
+                "id": 3,
+                "image": "https://i.ibb.co/6YYgDRs/3.jpg",
+                "name": "Sat Gambuj Mosque",
+                "description": "The mosque is locally known as the 'Shat Gombuj Masjid', which in Bengali means Sixty Domed Mosque.",
+                "rating": 3,
+                "duration": "1 Days 2 Nights",
+                "price": 5000
+            },
+            {
+                "id": 4,
+                "image": "https://i.ibb.co/XyRWdcd/4.jpg",
+                "name": "Sundarbans",
+                "description": "Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal.",
+                "rating": 5,
+                "duration": "4 Days  3 Nights",
+                "price": 12000
+            },
+            {
+                "id": 5,
+                "image": "https://i.ibb.co/pWdf1MR/5.jpg",
+                "name": "Ali-kadam",
+                "description": "Alikadam is a popular hiking destination among tourists for the tunnels in the mountains known as Alir Guha or Ali's Tunnels. Tourists are expected to face slippery and muddy terrains for the hike to the tunnels.",
+                "rating": 5,
+                "duration": "5 Days  4 Nights",
+                "price": 10000
+            },
+            {
+                "id": 6,
+                "image": "https://i.ibb.co/ynHkTw8/6.jpg",
+                "name": "Cox's Bazar",
+                "description": "Cox's Bazar is a city, fishing port, tourism centre, and district headquarters in southeastern Bangladesh.",
+                "rating": 5,
+                "duration": "4 Days  3 Nights",
+                "price": 20000
+            },
+            {
+                "id": 7,
+                "image": "https://i.ibb.co/r6G4RWR/7.jpg",
+                "name": "St. Martin's Island",
+                "description": "St. Martin is generally known as “Narikel Zinzira” in Bengali, means 'Coconut Island' and this is the only coral reef island in Bangladesh.",
+                "rating": 5,
+                "duration": "4 Days  3 Nights",
+                "price": 20000
+            }
+        ]
+    
+}
