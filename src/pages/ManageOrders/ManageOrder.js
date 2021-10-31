@@ -1,9 +1,32 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 
 const ManageOrder = () => {
+    const[orders,setOrders]=useState([])
+    useEffect(()=>{
+        fetch('http://localhost:5000/orders')
+        .then(res=>res.json())
+        .then(data =>setOrders(data))
+        
+    },[])
+    console.log(orders);
+  
     return (
         <div>
-            This is orderes
+           {
+               orders.map(order=><div
+               key={order._id}
+               className="container w-50  border border-success"
+               >
+                      
+                  <ul>
+                       <li className="text-start"> User-Email :{order.email}</li>
+                       <li className="text-start">Order-Name:{order.orders.name}</li>
+                   </ul>
+                  
+               </div>)
+           }
+                   
         </div>
     );
 };
