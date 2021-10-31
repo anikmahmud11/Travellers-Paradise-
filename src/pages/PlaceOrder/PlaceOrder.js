@@ -57,17 +57,18 @@ const PlaceOrder = () => {
         <div className="mb-2 container">
           <h4 className="text-success">Fill the form for booking</h4>
           <img className="w-25" src={singleService?.image} alt="" />
-          <form className="placeOrder-form container  m-0" onSubmit={handleSubmit(onSubmit)}>
+          <h4 className="text-success">{singleService?.name}</h4>
+          <form className="placeOrder-form container  m-0 border border-success rounded  " onSubmit={handleSubmit(onSubmit)}>
 
-        <input defaultValue={user.displayName} {...register("name")} />
+        <input className="container-fluid " defaultValue={user.displayName} {...register("name")} required />
 
-        <input defaultValue={user.email} {...register("email", { required: true })} />
+        <input className="container-fluid" defaultValue={user.email} {...register("email", { required: true })} required   />
         {errors.email && <span className="error">This field is required</span>}
-        <input placeholder="Address" defaultValue="" {...register("address")} />
-        <input placeholder="City" defaultValue="" {...register("city")} />
-        <input placeholder="phone number" defaultValue="" {...register("phone")} />
+        <input className="container-fluid" placeholder="Address" defaultValue="" {...register("address")} required/>
+        <input className="container-fluid" placeholder="City" defaultValue="" {...register("city")} required/>
+        <input className="container-fluid" placeholder="phone number" defaultValue="" {...register("phone")} required/>
 
-        <input type="submit" />
+        <input className="container-fluid bg-success text-white mb-2" type="submit" />
     </form>
         </div>
 
