@@ -31,7 +31,7 @@ const PlaceOrder = () => {
   const onSubmit = data => {
     const service = singleService;
     data.orders= service;
-    fetch('http://localhost:5000/orders', {
+    fetch('https://scary-flesh-21850.herokuapp.com/orders', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

@@ -9,7 +9,7 @@ const MyOrder = () => {
     const {user}=useAuth();
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://scary-flesh-21850.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                 const emails = data.filter(data=>data.email==user.email)
@@ -18,7 +18,7 @@ const MyOrder = () => {
     }, [])
     // delete user
     const handleDeleteOrder = id => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://scary-flesh-21850.herokuapp.com/orders/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
