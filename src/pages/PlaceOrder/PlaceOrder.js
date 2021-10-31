@@ -12,7 +12,7 @@ const PlaceOrder = () => {
   
 
   useEffect(() => {
-    fetch('http://localhost:5000/details')
+    fetch('https://scary-flesh-21850.herokuapp.com/details')
       .then(res => res.json())
       .then(data => setServiceDetails(data))
     // console.log(serviceDetails);
