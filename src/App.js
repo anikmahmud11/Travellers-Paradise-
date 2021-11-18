@@ -11,6 +11,7 @@ import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import ManageOrder from './pages/ManageOrders/ManageOrder';
 import MyOrder from './pages/MyOrders/MyOrder';
 import NotFound from './pages/Notfound/NotFound';
+import Payment from './pages/Payment/Payment';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
           </Route>
         <Route exact  path="/login">
           <Login></Login>
+          </Route>
+        <Route exact  path="/payment/:bookingId">
+          <Payment></Payment>
           </Route>
         <PrivateRoute exact path="/myorder">
           <MyOrder></MyOrder>

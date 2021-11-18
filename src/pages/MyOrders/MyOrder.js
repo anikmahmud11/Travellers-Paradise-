@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 
@@ -26,12 +27,13 @@ const MyOrder = () => {
                 if (data.deletedCount > 0) {
                     alert('deleted successfully')
                     const remainingOrders = orders.filter(order => order._id !== id);
-                    setOrders(remainingOrders)
+                    setOrders(remainingOrders);
+
                 }
             })
 
     }
-
+console.log(orders);
     return (
         <div>
             <h2 className="text-success m-5 service-header">Your Orders</h2>
@@ -40,7 +42,7 @@ const MyOrder = () => {
                 {
                     orders.map(order => <div
                         key={order._id}
-
+                        
 
                     >
                         <div className="row ">
@@ -54,7 +56,14 @@ const MyOrder = () => {
                                         <p className="text-start">Email: {order.email}  </p>
                                         <p className="text-start">Shipping-Address:{order.address}   </p>
                                         <p className="text-start">phone: {order.phone}  </p>
-                                        <Button className=" btn-success ">Go to Payment</Button>
+                                       {
+                                           order?.orders?.payment ? 
+                                           <Button className=" btn-success ">Paid</Button>
+                                           :
+                                           <Link to={`/payment/${order._id}`}>
+                                           <Button className=" btn-success ">Go to Payment</Button>
+                                           </Link>
+                                       }
                                         <br />
                                         <Button onClick={() => handleDeleteOrder(order._id)} className=" btn-success mt-1">Delete Booking</Button>
                                     </div>
